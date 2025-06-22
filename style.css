@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --my-white: hsl(0, 0%, 100%);
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+
+    /*
+    - Font size (paragraph): 15px
+    - Weights: 400, 700
+    - font-family: "Outfit", sans-serif;
+    */
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Outfit", sans-serif;
+    background-color: var(--slate-300);
+}
+.card{
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: var(--my-white);
+    overflow: hidden;
+}
+.img{
+    width: 100%;
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+.info{
+    padding: 20px 5px;
+    text-align: center;
+}
+h3{
+    font-size: 18px;
+    color: var(--slate-900);
+}
+p{
+    padding-top: 10px;
+    font-size: 15px;
+    color: var(--slate-500);
+}
+
+footer {
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    pointer-events: none;
+    color: var(--slate-500);
+    background-color: transparent;
+}
+footer span {
+    font-weight: 700;
+    color: var(--slate-900);
+}
+footer::selection {
+    color: var(--slate-300);
+    background-color: var(--slate-900);
+}
